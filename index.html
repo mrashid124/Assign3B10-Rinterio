@@ -22,9 +22,7 @@
             font-family: "Manrope", sans-serif;
         }
 
-        .arow-btn {
-            @apply -rotate-45 rinter-primary p-3 rounded-full;
-        }
+
     </style>
     <script>
         tailwind.config = {
@@ -42,9 +40,9 @@
 
 <body class="font-manrope">
     <!-- Header section -->
-    <header class="md:container md:mx-auto">
+    <header class="header md:container md:mx-auto">
 
-        <nav class="container mx-auto flex justify-between items-center px-4 lg:px-24 py-3">
+        <nav class="container mx-auto flex justify-between items-center px-4 lg:px-24 py-2 lg:py-6">
 
             <div class="navbar bg-base-100">
                 <div class="flex-1">
@@ -57,8 +55,7 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <ul tabindex="0" class="menu menu-sm dropdown-content  rounded-full mt-3 w-52 p-2 shadow">
                             <li><a>Home</a></li>
                             <li><a>Services</a></li>
                             <li><a>Portfolio</a></li>
@@ -68,16 +65,16 @@
                     </div>
 
                     <!-- <a class="btn btn-ghost text-xl">Rinterio</a> -->
-                    <div class="logo  flex items-center gap-2 mr-24">
+                    <div class="web-name flex items-center gap-2 mr-32">
                         <i
-                            class="fa-solid fa-arrow-right-long -rotate-45 rinter-primary p-2 rounded-full bg-rinter-primary"></i>
-                        <h2 class="text-heading font-extrabold text-3xl">Rinterio</h2>
+                            class="fa-solid fa-arrow-right-long -rotate-45 p-2 rounded-full bg-rinter-primary"></i>
+                        <h2 class="text-heading font-extrabold text-4xl">Rinterio</h2>
                     </div>
 
                 </div>
-                <div class="navbar-center hidden lg:flex ">
-                    <ul class="menu menu-horizontal px-1 ">
-                        <li><a>Home</a></li>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-2 ">
+                        <li><a class="font-bold">Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
@@ -87,10 +84,10 @@
                 </div>
                 <div class="navbar-end flex items-center gap-2">
                     <i
-                        class="fa-solid fa-magnifying-glass bg-green-50 hidden md:inline-block p-2 rounded-full cursor-pointer"></i>
+                        class="fa-solid fa-magnifying-glass bg-[#E9E9E9]  hidden md:inline-block p-3 rounded-full cursor-pointer"></i>
                     <i
-                        class="fa-solid fa-cart-plus bg-green-50 p-2 rounded-full cursor-pointer hidden md:inline-block"></i>
-                    <a class="btn bg-rinter-primary rounded-3xl text-white ">Book Consult <i
+                        class="fa-solid fa-cart-plus bg-[#E9E9E9]  p-3 rounded-full cursor-pointer hidden md:inline-block"></i>
+                    <a class="btn bg-rinter-primary rounded-3xl font-bold ">Book Consult <i
                             class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-white p-2 rounded-full"></i>
                     </a>
 
@@ -104,8 +101,10 @@
             <div class="banner-img flex justify-center mb-10">
                 <img src="assets/banner.png" alt="">
             </div>
-            <h1 class="banner-title text-3xl font-[900] text-center md:text-5xl lg:text-6xl">A barn house of this design has a striking appearance</h1>
-            <p class="banner-description text-center w-4/5 m-auto my-5">Creating a Barn Style House that blends tradition with modern style is all about finding the right balance
+            <h1 class="banner-title text-3xl font-black text-center md:text-5xl lg:text-6xl">A barn house of this design
+                has a striking appearance</h1>
+            <p class="banner-description text-center w-4/5 m-auto my-5">Creating a Barn Style House that blends
+                tradition with modern style is all about finding the right balance
                 between rustic charm and contemporary design.</p>
 
             <div class="btn-banner flex justify-center ">
@@ -117,10 +116,11 @@
             </div>
         </div>
     </header>
+
     <!-- main section -->
     <Main class="md:container md:mx-auto">
         <!-- About us section -->
-        <section class="container ">
+        <section class="container bg-[#F4F4F4]">
             <div class="about-us grid grid-cols-1 lg:grid-cols-2 gap-6 px-4 lg:px-24 py-8 lg:py-18 
             lg:pt-24">
 
@@ -134,22 +134,26 @@
                         </div>
                     </div>
 
-                    <h3 class="font-extrabold text-4xl md:text-5xl mt-5 mb-7 text-center lg:text-start">We design thoughtful, liveable spaces</h3>
-                    <p class="mb-4 mt-2 text-center lg:text-start">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <h3 class="font-extrabold text-4xl md:text-5xl mt-5 mb-7 text-center lg:text-start">We design
+                        thoughtful, liveable spaces</h3>
+                    <p class="mb-4 mt-2 text-center lg:text-start">The barn house captivates with its blend of rustic
+                        charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                     <div class="flex gap-6 flex-col md:flex-row lg:flex-col">
 
                         <div class="flex bg-white gap-6 p-4 rounded-lg items-start">
                             <img src="assets/commercial.png" alt="">
                             <div class="flex flex-col gap-2">
                                 <h4 class="font-bold text-xl">Commercial</h4>
-                                <p>The barn house designed for hosting families, business <br> workshops and wellbeing retreats.</p>
+                                <p>The barn house designed for hosting families, business <br> workshops and wellbeing
+                                    retreats.</p>
                             </div>
                         </div>
                         <div class="flex bg-white gap-3 p-4 rounded-lg items-start">
                             <img src="assets/residential.png" alt="">
                             <div class="flex flex-col gap-2">
                                 <h4 class="font-bold text-xl">Residential</h4>
-                                <p>Our barn range is designed to suit people who love <br> open-plan living, dining and kitchen spaces.</p>
+                                <p>Our barn range is designed to suit people who love <br> open-plan living, dining and
+                                    kitchen spaces.</p>
                             </div>
                         </div>
                     </div>
@@ -161,9 +165,9 @@
                 </div>
             </div>
         </section>
-        <!-- Work process section -->
 
-        <section id="servies" class="container mx-auto  px-5 lg:px-20  py-10">
+        <!-- Work process section -->
+        <section class="container mx-auto bg-[#F4F4F4] px-5 lg:px-20  py-10">
 
             <div>
                 <div class="mini flex justify-center">
@@ -173,7 +177,8 @@
                 </div>
 
                 <h2 class="text-center font-extrabold text-4xl my-5 ">Our Works Process</h2>
-                <p class="text-center max-w-[650px] m-auto mb-7">We profession in interior design, an impressive way of living. For more information please have a look bellow.</p>
+                <p class="text-center max-w-[650px] m-auto mb-7">We profession in interior design, an impressive way of
+                    living. For more information please have a look bellow.</p>
             </div>
 
             <div class="works grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-3            ">
@@ -204,9 +209,44 @@
             </div>
         </section>
 
+        <!-- Let’s Discuss Next Project -->
+        <section class="container bg-[url('./assets/bg.jpg')]">
+            <div class="discuss-next py-12 mt-3 connect-bg">
+                <div class="container mx-auto  px-5 lg:px-20  py-10">
+
+                    <div class="mini flex justify-center">
+                        <div class="bg-litePrimary rounded-full inline-block font-bold p-1 px-3">
+                            <i class="fa-solid fa-arrow-right-long "></i> Let’s Connect
+                        </div>
+                    </div>
+
+                    <h2 class="text-center font-extrabold text-4xl my-5 ">Let’s Discuss Next Project</h2>
+                    <p class="text-center max-w-[650px] m-auto mb-7">To understanding next steps, we have the guides,
+                        checklists and expert advice to keep you on track.</p>
+
+                    <form action="" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <input class="p-3 rounded-full outline-none" type="text" name="name" id="name"
+                            placeholder="First Name">
+                        <input class="p-3 rounded-full outline-none" type="text" name="lastname" id="lastName"
+                            placeholder="Last Name">
+                        <input class="p-3 rounded-full outline-none" type="number" name="number" id="number"
+                            placeholder="Phone Number">
+                        <input class="p-3 rounded-full outline-none" type="email" name="email" id="email"
+                            placeholder="Email Number">
+                        <textarea class="md:col-span-2 p-3 rounded-3xl resize-none  outline-none" rows="6"
+                            name="message" id="messate" placeholder="Write your Message here"></textarea>
+
+                        <button class="md:col-span-2 w-full bg-rinter-primary font-bold  py-2 rounded-full mt-2 ">Send Mail <i
+                            class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-white p-2 rounded-full"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
 
         <br>
-        <br>
+        <h2>Let’s Discuss Next Project</h2>
+        <br>#F4F4F4 <p>rounded-box z-[1] </p>
         <p>we profession in interior design, an impressive way of living. For more information visit our website.</p>
         <p>Creating a Barn Style House that blends tradition with modern style is all about finding the right balance
             between rustic charm and contemporary design.
