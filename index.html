@@ -13,108 +13,124 @@
     <!-- Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Monsieur+La+Doulaise&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <style>
-        .font-manrope{
+        .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-        .arow-btn{
-          @apply -rotate-45 rinter-primary p-3 rounded-full;
+
+        .arow-btn {
+            @apply -rotate-45 rinter-primary p-3 rounded-full;
         }
     </style>
-      <script>
+    <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'rinter-primary': '#ABEF5F',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'rinter-primary': '#ABEF5F',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
 
 <body class="font-manrope">
-        <!-- Header section -->
-        <header class="md:container md:mx-auto">
-            
-            <nav class="container px-5 lg:px-20 mx-auto flex justify-between items-center py-2">
+    <!-- Header section -->
+    <header class="md:container md:mx-auto">
 
-                <div class="navbar bg-base-100">
-                    <div class="flex-1">
-                        
-                      <div class="dropdown">
+        <nav class="container mx-auto flex justify-between items-center px-5 lg:px-20 py-2">
+
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+
+                    <div class="dropdown">
                         <div tabindex="0" role="button" class="btn  sm:hidden">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              stroke-width="2"
-                              d="M4 6h16M4 12h8m-8 6h16" />
-                          </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
                         </div>
-                        <ul
-                          tabindex="0"
-                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                          <li><a>Home</a></li>
-                          <li><a>Services</a></li>
-                          <li><a>Portfolio</a></li>
-                          <li><a></a>Blogs</li>
-                          <li><a></a>Contact Us</li>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a></a>Blogs</li>
+                            <li><a></a>Contact Us</li>
                         </ul>
-                      </div>
-                     
-                     
-                      <!-- <a class="btn btn-ghost text-xl">Rinterio</a> -->
-                      <div class="logo  flex items-center gap-2">
-                        <i
-                          class="fa-solid fa-arrow-right-long -rotate-45 rinter-primary p-2 rounded-full bg-rinter-primary"
-                        ></i>
-                        <h2 class="text-heading font-extrabold text-4xl">Rinterio</h2>
-                      </div>
-
                     </div>
-                    <div class="navbar-center hidden lg:flex">
-                      <ul class="menu menu-horizontal px-1">
+
+
+                    <!-- <a class="btn btn-ghost text-xl">Rinterio</a> -->
+                    <div class="logo  flex items-center gap-2">
+                        <i
+                            class="fa-solid fa-arrow-right-long -rotate-45 rinter-primary p-2 rounded-full bg-rinter-primary"></i>
+                        <h2 class="text-heading font-extrabold text-4xl">Rinterio</h2>
+                    </div>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
                         <li><a></a>Blogs</li>
                         <li><a></a>Contact Us</li>
-                        
-                      </ul>
-                    </div>
-                    <div class="navbar-end">
-                        <i
-                        class="fa-solid fa-magnifying-glass bg-green-50 hidden md:inline-block p-2 rounded-full cursor-pointer"
-                      ></i>
-                      <i
-                        class="fa-solid fa-cart-plus bg-green-50 p-2 rounded-full cursor-pointer hidden md:inline-block"
-                      ></i>
-                      <a class="btn bg-rinter-primary text-white ">Book Consult</a>
-                    </div>
-                  </div>
-            </nav>
-        </header>
-        <!-- main section -->
-        <Main class="md:container md:mx-auto">
-            <p>we profession in interior design, an impressive way of living. For more information visit our website.</p>
-            <p>Creating a Barn Style House that blends tradition with modern style is all about finding the right balance between rustic charm and contemporary design.
-                Creating a Barn Style House that blends tradition with modern style is all about finding the right balance between rustic charm and contemporary design.</p>
-        </Main>
-        <!-- Footer section -->
-        <Footer>
-    
-        </Footer>
-    
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <i
+                        class="fa-solid fa-magnifying-glass bg-green-50 hidden md:inline-block p-2 rounded-full cursor-pointer"></i>
+                    <i
+                        class="fa-solid fa-cart-plus bg-green-50 p-2 rounded-full cursor-pointer hidden md:inline-block"></i>
+                    <a class="btn bg-rinter-primary rounded-3xl text-white ">Book Consult <i
+                            class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-white p-2 rounded-full"></i>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner section  -->
+
+        <div class="container mx-auto px-5 lg:px-20 py-10">
+            <div class="banner-img flex justify-center mb-10">
+                <img src="assets/banner.png" alt="">
+            </div>
+            <h1 class="banner-title text-3xl font-[900] text-center md:text-5xl lg:text-6xl">A barn house of this design has a striking appearance</h1>
+            <p class="banner-description text-center w-4/5 m-auto my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows
+                that flood the space with natural light.</p>
+
+            <div class="btn-banner flex justify-center ">
+                <a class="btn bg-rinter-primary rounded-3xl ">View
+                    Details <i
+                        class="fa-solid fa-arrow-right-long -rotate-45 rinter-primary p-2 rounded-full bg-rinter-primary"></i>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <!-- main section -->
+    <Main class="md:container md:mx-auto">
+        <p>we profession in interior design, an impressive way of living. For more information visit our website.</p>
+        <p>Creating a Barn Style House that blends tradition with modern style is all about finding the right balance
+            between rustic charm and contemporary design.
+            Creating a Barn Style House that blends tradition with modern style is all about finding the right balance
+            between rustic charm and contemporary design.</p>
+    </Main>
+    <!-- Footer section -->
+    <Footer>
+
+    </Footer>
+
 </body>
 
 </html>
