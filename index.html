@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <title>Rinterio Real Estate</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font Awesome -->
+    <script src="https://kit.fontawesome.com/879b5a3709.js" crossorigin="anonymous"></script>
 
     <!-- Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,18 +19,93 @@
         .font-manrope{
             font-family: "Manrope", sans-serif;
         }
+        .arow-btn{
+          @apply -rotate-45 rinter-primary p-3 rounded-full;
+        }
     </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'rinter-primary': '#ABEF5F',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body class="font-manrope">
         <!-- Header section -->
-        <header>
-            <nav>
-                
+        <header class="md:container md:mx-auto">
+            
+            <nav class="container px-5 lg:px-20 mx-auto flex justify-between items-center py-2">
+
+                <div class="navbar bg-base-100">
+                    <div class="flex-1">
+                        
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn  sm:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Home</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Portfolio</a></li>
+                          <li><a></a>Blogs</li>
+                          <li><a></a>Contact Us</li>
+                        </ul>
+                      </div>
+                     
+                     
+                      <!-- <a class="btn btn-ghost text-xl">Rinterio</a> -->
+                      <div class="logo  flex items-center gap-2">
+                        <i
+                          class="fa-solid fa-arrow-right-long -rotate-45 rinter-primary p-2 rounded-full bg-rinter-primary"
+                        ></i>
+                        <h2 class="text-heading font-extrabold text-4xl">Rinterio</h2>
+                      </div>
+
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a></a>Blogs</li>
+                        <li><a></a>Contact Us</li>
+                        
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <i
+                        class="fa-solid fa-magnifying-glass bg-green-50 hidden md:inline-block p-2 rounded-full cursor-pointer"
+                      ></i>
+                      <i
+                        class="fa-solid fa-cart-plus bg-green-50 p-2 rounded-full cursor-pointer hidden md:inline-block"
+                      ></i>
+                      <a class="btn bg-rinter-primary text-white ">Book Consult</a>
+                    </div>
+                  </div>
             </nav>
         </header>
         <!-- main section -->
-        <Main>
+        <Main class="md:container md:mx-auto">
             <p>we profession in interior design, an impressive way of living. For more information visit our website.</p>
             <p>Creating a Barn Style House that blends tradition with modern style is all about finding the right balance between rustic charm and contemporary design.
                 Creating a Barn Style House that blends tradition with modern style is all about finding the right balance between rustic charm and contemporary design.</p>
